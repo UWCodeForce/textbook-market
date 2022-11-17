@@ -4,7 +4,7 @@ Textbook Market is an all in one place for students across the globe to sell gen
 ## Prerequisites
 1. Make sure you have NodeJS v18 or newer installed
 2. Ensure you have **pnpm** installed `npm i -g pnpm`
-3. Make sure you have MongoDB installed, or a docker container for MongoDB
+3. Make sure you have MongoDB installed, or a docker container for MongoDB see (https://github.com/UWCodeForce/textbook-market/wiki/How-to-install-MongoDB)
 
 ## How to setup the project
 1. Clone the repository with `git clone https://github.com/UWCodeForce/textbook-market.git`
