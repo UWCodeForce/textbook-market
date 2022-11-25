@@ -15,5 +15,9 @@
     "next": "13.0.3",
     "react": "18.2.0",
     "react-dom": "18.2.0"
+  },
+  "devDependencies": {
+    "client-only": "^0.0.1",
+    "server-only": "^0.0.1"
   }
 }
