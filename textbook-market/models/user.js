@@ -29,11 +29,8 @@ UserSchema.pre('save', function (next) {
 	})
 })
 
-UserSchema.methods.comparePassword = function (candidatePassword, cb) {
-	bcrypt.compare(candidatePassword, this.password, function (err, isMatch) {
-		if (err) return cb(err)
-		cb(null, isMatch)
-	})
+UserSchema.methods.validatePassword = async function validatePassword(data) {
+	return bcrypt.compare(data, this.password)
 }
 
 module.exports = mongoose.models.User || mongoose.model('User', UserSchema) // check if model already exists, if not create it
