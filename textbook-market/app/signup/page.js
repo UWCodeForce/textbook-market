@@ -50,7 +50,7 @@ export default function SignUp() {
 			>
 				{({ errors, touched }) => (
 					<Form>
-						<Field type='text' name='username' placeholder='JohnDoe001' />
+						<Field type='text' name='username' placeholder='username' />
 						{touched.username && <p>{errors.username}</p>}
 						<Field type='password' name='password' placeholder='password' />
 						{touched.password && <p>{errors.password}</p>}
