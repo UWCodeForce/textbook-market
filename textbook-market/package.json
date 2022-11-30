@@ -9,12 +9,18 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@next-auth/mongodb-adapter": "^1.1.1",
+    "bcrypt": "^5.1.0",
     "eslint": "8.27.0",
     "eslint-config-next": "13.0.3",
-    "mongodb": "^4.11.0",
+    "formik": "^2.2.9",
+    "mongodb": "^4.12.1",
+    "mongoose": "^6.7.4",
     "next": "13.0.3",
+    "next-auth": "^4.17.0",
     "react": "18.2.0",
-    "react-dom": "18.2.0"
+    "react-dom": "18.2.0",
+    "yup": "^0.32.11"
   },
   "devDependencies": {
     "client-only": "^0.0.1",
