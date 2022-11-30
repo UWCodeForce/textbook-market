@@ -27,7 +27,7 @@ export default function SignUp() {
 			password: values.confirmPassword, // could also be password
 		}
 
-		var res = await fetch('/api/register', {
+		var res = await fetch('/api/auth/register', {
 			method: 'POST',
 			credentials: 'include',
 			headers: { 'Content-Type': 'application/json' },
