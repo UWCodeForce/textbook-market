@@ -1,12 +1,12 @@
-import connectDB from '../../lib/connectDB'
-const User = require('../../models/user')
+import dbConnect from '../../../lib/dbConnect'
+const User = require('../../../models/user')
 
 export default async function handler(req, res) {
 	const { username, password } = req.body
 	console.log(username, password)
 
 	try {
-		connectDB()
+		await dbConnect()
 		const exists = await User.findOne({ username: username })
 		console.log(exists)
 
